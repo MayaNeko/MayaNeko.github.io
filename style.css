@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
 }
 
-.row:after, .menu:after {
+.row:after,.menu:after {
     content: "";
     display: block;
     clear: both;
@@ -29,7 +29,7 @@ body {
     width: 25%;
 }
 
-.col-md-3 {
+.col-md-6 {
     width: 50%;
 }
 
