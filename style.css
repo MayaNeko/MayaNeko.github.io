@@ -41,8 +41,6 @@ body {
 }
 
 .col-md-1 {
-    /* width: 35%;
-    text-align: right; */
     margin: 5px 0px 5px 30px;
 }
 
@@ -80,8 +78,6 @@ body {
     color: white;
     transition: 0.3s;
 }
-
-
 
 .submenu {
     list-style: none;
