@@ -150,7 +150,7 @@ body {
     transition: 0.3s;
 }
 
-input {
+.searchbar input {
     display: inline-block;
     font-family: inherit;
     padding: 0px 0px 0px 10px;
@@ -163,7 +163,7 @@ input {
     border: none;
 }
 
-input::placeholder {
+.searchbar input::placeholder {
     opacity: 1;
 }
 
@@ -243,6 +243,74 @@ input::placeholder {
     font-size: 75px;
     text-align: center;
     line-height: 400px;
+}
+
+.filter-container {
+    background-color: rgba(255, 255, 255, 20%);
+    border-right: 1px solid white;
+    padding: 0 30px 30px 30px;
+    text-align: left;
+}
+
+.dev-properties {
+    padding: 30px 0;
+}
+
+h4 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+input[type="checkbox"] {
+    display: none;
+    position: absolute;
+}
+
+label {
+    position: relative;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+label:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: white;
+}
+
+.more-options > p {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.more-options {
+    margin-bottom: 30px;
+}
+
+.filter-container > .button-container {
+    padding-bottom: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
 }
 
 .page-nav {
